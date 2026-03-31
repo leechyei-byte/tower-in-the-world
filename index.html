@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界建築高度排名 - Tower in the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="card-glass">
+            <header class="header">
+                <button id="prevBtn" class="nav-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </button>
+                <div class="title-section">
+                    <h1 id="buildingName">NO.1-哈里發塔 (Burj Khalifa)</h1>
+                    <h2 id="buildingLocation">阿拉伯聯合大公國 (United Arab Emirates)</h2>
+                </div>
+                <button id="nextBtn" class="nav-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </button>
+            </header>
+
+            <main class="main-content">
+                <div class="image-container">
+                    <div id="loadingOverlay" class="loading-overlay">載入中...</div>
+                    <img id="buildingImage" src="assets/building_1.webp" alt="Building Photo">
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-label">建築物高度：</span>
+                        <span id="buildingHeight" class="stat-value">828 m</span>
+                    </div>
+                </div>
+
+                <div class="pagination-section">
+                    <div class="button-group page-range-group">
+                        <div class="range-btn-wrapper">
+                            <button class="range-btn active" data-start="1" data-end="50">排名 1-50</button>
+                            <div class="ranking-dropdown" id="dropdown-1-50"></div>
+                        </div>
+                        <div class="range-btn-wrapper">
+                            <button class="range-btn" data-start="51" data-end="100">排名 51-100</button>
+                            <div class="ranking-dropdown" id="dropdown-51-100"></div>
+                        </div>
+                        <div class="range-btn-wrapper">
+                            <button class="range-btn" data-start="101" data-end="150">排名 101-150</button>
+                            <div class="ranking-dropdown" id="dropdown-101-150"></div>
+                        </div>
+                        <div class="range-btn-wrapper">
+                            <button class="range-btn" data-start="151" data-end="200">排名 151-200</button>
+                            <div class="ranking-dropdown" id="dropdown-151-200"></div>
+                        </div>
+                        <div class="range-btn-wrapper">
+                            <button class="range-btn" data-start="201" data-end="250">排名 201-250</button>
+                            <div class="ranking-dropdown" id="dropdown-201-250"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="button-group action-group">
+                        <button id="exportPdfBtn" class="action-btn pdf-btn">匯出 PDF</button>
+                        <button id="searchBtn" class="action-btn search-btn">
+                            <svg viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                            搜尋
+                        </button>
+                        <button id="sortBtn" class="action-btn sort-btn">排序: 高度</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content card-glass">
+            <div class="modal-header">
+                <h3>搜尋國家 / 建築 (Search)</h3>
+                <button id="closeSearchBtn" class="close-btn">&times;</button>
+            </div>
+            <div class="search-input-container">
+                <input type="text" id="searchInput" placeholder="輸入國家或建築名稱 (中英文皆可)..." autocomplete="off">
+            </div>
+            <div id="searchResults" class="search-results">
+                <!-- Results will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
