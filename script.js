@@ -43,7 +43,23 @@ function updateBuildingDisplay() {
         13: 'assets/international_commerce_centre.png',
         14: 'assets/wuhan_greenland_center.png',
         15: 'assets/central_park_tower.png',
-        16: 'assets/lakhta_center.png'
+        16: 'assets/lakhta_center.png',
+        17: 'assets/landmark_81.png',
+        18: 'assets/international_land_sea_center.png',
+        19: 'assets/the_exchange_106.png',
+        20: 'assets/changsha_ifs_tower_t1.png',
+        21: 'assets/petronas_tower_1.png',
+        22: 'assets/petronas_tower_2.png',
+        23: 'assets/zifeng_tower.png',
+        24: 'assets/suzhou_ifs.png',
+        25: 'assets/wuhan_center.png',
+        26: 'assets/willis_tower.png',
+        27: 'assets/kk100.png',
+        28: 'assets/guangzhou_international_finance_center.png',
+        29: 'assets/111_west_57th_street.png',
+        30: 'assets/shandong_international_financial_center.png',
+        31: 'assets/one_vanderbilt.png',
+        32: 'assets/432_park_avenue.png'
     };
 
     const imgUrl = rankImageMap[building.rank] || 
