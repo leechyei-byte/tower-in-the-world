@@ -59,7 +59,24 @@ function updateBuildingDisplay() {
         29: 'assets/111_west_57th_street.png',
         30: 'assets/shandong_international_financial_center.png',
         31: 'assets/one_vanderbilt.png',
-        32: 'assets/432_park_avenue.png'
+        32: 'assets/432_park_avenue.png',
+        33: 'assets/marina_101.png',
+        34: 'assets/trump_international_hotel_and_tower.png',
+        35: 'assets/270_park_avenue.png',
+        36: 'assets/minying_international_trade_center_t2.png',
+        37: 'assets/jin_mao_tower.png',
+        38: 'assets/nanjing_financial_city_tower_1.png',
+        39: 'assets/princess_tower.png',
+        40: 'assets/al_hamra_tower.png',
+        41: 'assets/international_finance_centre.png',
+        42: 'assets/haeundae_lct_landmark_tower.png',
+        43: 'assets/ningbo_central_plaza.png',
+        44: 'assets/guangxi_china_resources_tower.png',
+        45: 'assets/guiyang_international_financial_center_t1.png',
+        46: 'assets/iconic_tower.png',
+        47: 'assets/china_merchants_bank_headquarters.png',
+        48: 'assets/china_resources_tower.png',
+        49: 'assets/23_marina.png'
     };
 
     const imgUrl = rankImageMap[building.rank] || 
