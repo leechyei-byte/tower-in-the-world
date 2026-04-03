@@ -76,7 +76,24 @@ function updateBuildingDisplay() {
         46: 'assets/iconic_tower.png',
         47: 'assets/china_merchants_bank_headquarters.png',
         48: 'assets/china_resources_tower.png',
-        49: 'assets/23_marina.png'
+        49: 'assets/23_marina.png',
+        50: 'assets/citic_plaza.png',
+        51: 'assets/citymark_centre.png',
+        52: 'assets/shum_yip_upperhills_tower_1.png',
+        53: 'assets/30_hudson_yards.png',
+        54: 'assets/pif_tower.png',
+        55: 'assets/shun_hing_square.png',
+        56: 'assets/eton_place_dalian_tower_1.png',
+        57: 'assets/autograph_tower.png',
+        58: 'assets/logan_century_center_1.png',
+        59: 'assets/burj_mohammed_bin_rashid.png',
+        60: 'assets/empire_state_building.png',
+        61: 'assets/elite_residence.png',
+        62: 'assets/riverview_plaza.png',
+        63: 'assets/guangdong_business_center.png',
+        64: 'assets/dabaihui_plaza.png',
+        65: 'assets/central_plaza.png',
+        66: 'assets/federation_tower_east.png'
     };
 
     const imgUrl = rankImageMap[building.rank] || 
