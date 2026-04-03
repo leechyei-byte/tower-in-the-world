@@ -93,7 +93,24 @@ function updateBuildingDisplay() {
         63: 'assets/guangdong_business_center.png',
         64: 'assets/dabaihui_plaza.png',
         65: 'assets/central_plaza.png',
-        66: 'assets/federation_tower_east.png'
+        66: 'assets/federation_tower_east.png',
+        67: 'assets/hengfeng_guiyang_center_tower_1.png',
+        68: 'assets/dalian_international_trade_center.png',
+        69: 'assets/shanghai_international_trade_center.png',
+        70: 'assets/haitian_center_tower_2.png',
+        71: 'assets/golden_eagle_tiandi_tower_a.png',
+        72: 'assets/bank_of_china_tower.png',
+        73: 'assets/bank_of_america_tower.png',
+        74: 'assets/ciel_dubai_marina.png',
+        75: 'assets/st_regis_chicago.png',
+        76: 'assets/almas_tower.png',
+        77: 'assets/huiyun_center.png',
+        78: 'assets/hanking_center.png',
+        79: 'assets/greenland_group_suzhou_center.png',
+        80: 'assets/gevora_hotel.png',
+        81: 'assets/galaxy_world_tower_1.png',
+        82: 'assets/jw_marriott_marquis_dubai_1.png',
+        83: 'assets/emirates_office_tower.png'
     };
 
     const imgUrl = rankImageMap[building.rank] || 
