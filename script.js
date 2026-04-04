@@ -110,7 +110,24 @@ function updateBuildingDisplay() {
         80: 'assets/gevora_hotel.png',
         81: 'assets/galaxy_world_tower_1.png',
         82: 'assets/jw_marriott_marquis_dubai_1.png',
-        83: 'assets/emirates_office_tower.png'
+        83: 'assets/emirates_office_tower.png',
+        84: 'assets/raffles_city_chongqing_t3n.png',
+        85: 'assets/oko_south_tower.png',
+        86: 'assets/cbrt_tower.png',
+        87: 'assets/skytower_pinnacle_one_yonge.png',
+        88: 'assets/forum_66_tower_1.png',
+        89: 'assets/the_pinnacle.png',
+        90: 'assets/xian_glory_international_financial_center.png',
+        91: 'assets/spring_city_66.png',
+        92: 'assets/85_sky_tower.png',
+        93: 'assets/aon_center.png',
+        94: 'assets/the_center.png',
+        95: 'assets/neva_towers_2.png',
+        96: 'assets/xiamen_cross_strait_financial_centre.png',
+        97: 'assets/john_hancock_center.png',
+        98: 'assets/adnoc_headquarters.png',
+        99: 'assets/ahmed_abdul_rahim_al_attar_tower.png',
+        100: 'assets/tianjin_world_financial_center.png'
     };
 
     const imgUrl = rankImageMap[building.rank] || 
