@@ -25,7 +25,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -34,20 +34,20 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 40px;
+  align-items: flex-start;
+  padding: 20px 40px;
 }
 
 .card-glass {
   background: var(--card-bg);
   border: 1px solid var(--glass-border);
   border-radius: 20px;
-  padding: 40px 60px;
+  padding: 20px 30px;
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 1100px;
+  gap: 15px;
+  width: 980px;
   max-width: 95vw;
 }
 
@@ -98,17 +98,19 @@ body {
 .image-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10.5;
+  aspect-ratio: 16 / 13;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   border: 1px solid var(--glass-border);
+  background: #000;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center top;
   transition: opacity 0.5s ease;
 }
 
@@ -132,10 +134,13 @@ body {
 
 .stats-container {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 20px; /* Vertical gap between items */
   padding: 0;
   margin-top: auto;
+  margin-bottom: 60px;
 }
 
 .stat-item {
@@ -159,7 +164,7 @@ body {
 
 .content-layout {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   align-items: stretch; /* Allows sidebar to matching image height for bottom alignment */
   width: 100%;
 }
@@ -167,8 +172,8 @@ body {
 .sidebar-tools {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 160px;
+  gap: 10px;
+  width: 180px;
   flex-shrink: 0;
   /* position: relative;  - Moved to .page-range-group for tighter alignment */
 }

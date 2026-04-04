@@ -10,6 +10,7 @@ function updateBuildingDisplay() {
     const nameEl = document.getElementById('buildingName');
     const locationEl = document.getElementById('buildingLocation');
     const heightEl = document.getElementById('buildingHeight');
+    const completionEl = document.getElementById('buildingCompletion');
     const imageEl = document.getElementById('buildingImage');
     const loadingOverlay = document.getElementById('loadingOverlay');
 
@@ -25,6 +26,7 @@ function updateBuildingDisplay() {
     const countryEN = building.country;
     locationEl.textContent = `${countryZH} (${countryEN})`;
     heightEl.textContent = `${building.height_m.toFixed(1)} m`;
+    completionEl.textContent = `${building.completion_year || '---'}`;
 
     // Update image
     const rankImageMap = {
@@ -127,8 +129,27 @@ function updateBuildingDisplay() {
         97: 'assets/john_hancock_center.png',
         98: 'assets/adnoc_headquarters.png',
         99: 'assets/ahmed_abdul_rahim_al_attar_tower.png',
-        100: 'assets/tianjin_world_financial_center.png'
+        100: 'assets/tianjin_world_financial_center.png',
+        101: 'assets/damac_heights.png',
+        102: 'assets/shimao_international_plaza.png',
+        103: 'assets/wenzhou_world_trade_center.png',
+        104: 'assets/rose_tower.png',
+        105: 'assets/minsheng_bank_building.png',
+        106: 'assets/china_world_trade_center_tower_iii.png',
+        107: 'assets/ryugyong_hotel.png',
+        108: 'assets/zhuhai_tower.png',
+        109: 'assets/yuexiu_fortune_center_tower_1.png',
+        110: 'assets/hon_kwok_city_center.png',
+        111: 'assets/longxi_international_hotel.png',
+        112: 'assets/wuxi_suning_plaza_tower_1.png',
+        113: 'assets/al_yaqoub_tower_dubai.png',
+        114: 'assets/the_wharf_times_square_wuxi.png',
+        115: 'assets/baoneng_center_shenzhen.png',
+        116: 'assets/the_address_boulevard_dubai.png',
+        117: 'assets/index_tower_dubai.png'
     };
+
+
 
     const imgUrl = rankImageMap[building.rank] || 
                    `https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80`;
@@ -276,9 +297,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Mock Action Buttons
-document.getElementById('exportPdfBtn').addEventListener('click', () => {
-    alert('正在將 1-250 排名資料匯出成 PDF...');
-});
+
 
 // Search Modal Logic
 const searchModal = document.getElementById('searchModal');
@@ -354,8 +373,4 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && searchModal.classList.contains('show')) {
         closeSearch();
     }
-});
-
-document.getElementById('sortBtn').addEventListener('click', () => {
-    alert('目前已按高度從高到低排序。');
 });
