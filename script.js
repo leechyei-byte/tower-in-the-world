@@ -146,7 +146,24 @@ function updateBuildingDisplay() {
         114: 'assets/the_wharf_times_square_wuxi.png',
         115: 'assets/baoneng_center_shenzhen.png',
         116: 'assets/the_address_boulevard_dubai.png',
-        117: 'assets/index_tower_dubai.png'
+        117: 'assets/index_tower_dubai.png',
+        118: 'assets/the_landmark_abu_dhabi.png',
+        119: 'assets/q1_tower_gold_coast.png',
+        120: 'assets/burj_al_arab_dubai.png',
+        121: 'assets/guangxi_finance_plaza.png',
+        122: 'assets/nina_tower_hong_kong.png',
+        123: 'assets/sinar_mas_center_1.png',
+        124: 'assets/farglory_financial_center.png',
+        125: 'assets/chrysler_building.png',
+        126: 'assets/new_york_times_building.png',
+        127: 'assets/hhhr_tower_dubai.png',
+        128: 'assets/chongqing_ifs_t1.png',
+        129: 'assets/nanjing_youth_cultural_centre_t1.png',
+        130: 'assets/mahanakhon_bangkok.png',
+        131: 'assets/abu_dhabi_plaza_astana.png',
+        132: 'assets/bank_of_america_plaza_atlanta.png',
+        133: 'assets/us_bank_tower_la.png',
+        134: 'assets/menara_telekom_kl.png'
     };
 
 
